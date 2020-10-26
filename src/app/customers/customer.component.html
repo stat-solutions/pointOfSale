@@ -11,9 +11,13 @@
 </div>
 
 
-<div>
+<div class="form-group">
     <p>Search for a customer</p>
     <input type="search" placeholder="Enter name, customer code or contact details">
+    <select class="form-control" formControlName="customergroup" (change)="onChangeCustomerGroup()">
+        <option value="">Customer Group</option>
+        <option *ngFor="let customer group of customer groups" [ngValue]="customergroup">{{customerGroup.name}}</option>
+    </select>
     
     <p>more filters</p>
     <button class="btn btn-primary">Search</button>

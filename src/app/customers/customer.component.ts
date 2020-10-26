@@ -11,6 +11,9 @@ export class CustomerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onChangeCustomerGroup(){
+    
+  }
   
 
   importCustomer(){
