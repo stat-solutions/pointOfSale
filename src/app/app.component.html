@@ -1,12 +1,35 @@
-<h1>{{title}}</h1>
 
-<h3><a style="text-decoration: none;" routerLink="">Home</a></h3>
-<h3><a style="text-decoration: none;" routerLink="/sell">Sell</a></h3>
-<h3><a style="text-decoration: none;" routerLink="/products">Products</a></h3>
-<h3><a style="text-decoration: none;" routerLink="/customers">Customers</a></h3>
-<h3><a style="text-decoration: none;" routerLink="/reporting">Reporting</a></h3>
-<h3><a style="text-decoration: none;" routerLink="/salesledger">Sales Legder</a></h3>
-<h3><a style="text-decoration: none;" routerLink="/setup">Setup</a></h3>
+<div class="wrapper">
+    
+    <nav id="sidebar">
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a routerLink="">Home</a>
+            </li>
+            <li>
+                <a routerLink="/sell">Sell</a>
+            </li>
+            <li>
+                <a routerLink="/products">Products</a>
+
+            </li>
+            <li>
+                <a routerLink="/customers">Customers</a>
+            </li>
+            <li>
+                <a routerLink="/reporting">Reporting</a>
+            </li>
+            <li>
+                <a routerLink="/salesledger">Sales Legder</a>
+            </li>
+            <li>
+                <a routerLink="/setup">Setup</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
 
 
 <router-outlet></router-outlet>
