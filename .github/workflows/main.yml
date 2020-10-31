@@ -3,10 +3,17 @@ name: Build Angular
 jobs:
   build:
     runs-on: ubuntu-latest
+<<<<<<< HEAD
 #     defaults:
 #       run:
 #         shell: bash
 #         working-directory: Client
+=======
+    # defaults:
+    #   run:
+    #     shell: bash
+    #     working-directory: Client
+>>>>>>> added-gitactions-in-your-branch
     strategy:
       matrix:
         node-version: [12.x]
