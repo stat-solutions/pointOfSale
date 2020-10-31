@@ -1,0 +1,10 @@
+.head{
+    text-decoration: none;
+    color: black;
+
+}
+ a:hover{
+    color: green;
+    text-decoration: underline;
+
+}

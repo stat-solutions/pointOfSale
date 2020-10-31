@@ -1,0 +1,44 @@
+<div style="background-color:gainsboro ;  float: right; position: absolute; top: 0%; left: 28%;">
+    <div style="background-color: gainsboro; margin: 50px;">
+        <h1>Status</h1><br>
+        <h3>Reset local data</h3><br>
+        <p>We keep a copy of some of your store data in your web browser so you can keep selling if you lose your
+            Internet connection. Sometimes, this gets out of sync.
+            <br> Resetting it can help if you're having trouble with Vend</p>
+        <button class="btn btn-secondary" (click)="onReset()" style="background-color: green; margin: 80px;">Rest Data</button>
+
+    </div>
+
+    <div id="showMe" style="display: none; float: right; position: absolute; top: 0%; left: 50%; font-size: 60%;">
+        <table border="1" style="background-color: rgb(255, 255, 255); color: rgb(7, 7, 7); display: flexbox;">
+            <tr><td>
+        <h5>Are you sure you want to reset data?</h5>
+        <h6>Resetting your data deletes:</h6>
+        <ul>
+            <li>
+                The sale you're currently working on.
+            </li>
+            <li>
+                Any completed sales that haven't yet been saved to our servers.
+            </li>
+            <li>
+                The copy of your Web Register data saved in your browser
+                (we'll re-sync this with the latest version).
+            </li>
+            
+        </ul>
+        <p> <b>Before resetting your data, check your sales history to make sure your most recent sales have been saved.
+                Do not reset data if they do not appear.</b></p>
+        <br>
+        <div style="margin-left: 80px !important">
+
+            <button class="btn btn-secondary" (click)="hideBox()">Cancel</button>
+            <button class="btn btn-primary" >Reset Data</button>
+        </div></td></tr>
+    </table>
+
+    </div>
+
+
+
+</div>
