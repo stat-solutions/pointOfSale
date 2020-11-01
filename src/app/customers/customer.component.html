@@ -1,26 +1,39 @@
-<div>
-<h1>Customers</h1>
-<div>
-    <p>
-        Manage your customers and their balances, or segment them by demographics and spending habits.
-    </p>
-    <div class="border">
-        <button (click)="importCustomer()" class="btn btn-primary">Import Customer</button>
-        <button (click)="addCustomer()" class="btn btn-primary">Add Customer</button>
+<div style="float:right; position:absolute; top:0%; left:25%" class="wrapper">
+    <h1>Customers</h1>
+    <div>
+        <p>
+            Manage your customers and their balances, or segment them by demographics and spending habits.
+        </p>
+        <div class="border">
+            <a routerLink="importCustomer"><button (click)="importCustomer()" class="btn btn-primary">Import
+                    Customer</button></a>
+            <button (click)="addCustomer()" class="btn btn-primary">Add Customer</button>
+        </div>
+
     </div>
 
-</div>
+    <form action="">
+    <div class="form-group">
+        <label for="">Search for a customer</label>
+        <input type="search" placeholder="Enter name, customer code or contact details">
+        <select class="form-control" formControlName="customergroup" (change)="onChangeCustomerGroup()">
+        </select>
+    </div>
+    </form>
 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true">Customer Group
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li>All</li>
+            <li>All Customers</li>
+        </ul>
 
-<div class="form-group">
-    <label>Search for a customer</label>
-    <input type="search" placeholder="Enter name, customer code or contact details">
-    <select class="form-control" formControlName="customergroup" (change)="onChangeCustomerGroup()">
-        <label value="">Customer Group</label>
-        <option *ngFor="let customer group of customer groups" [ngValue]="customergroup">{{customerGroup.name}}</option>
-    </select>
-    
-    <label>more filters</label>
-    <button class="btn btn-primary">Search</button>
-</div>
+    </div>
+    <div>
+        <label>more filters</label>
+        <button type="button" class="btn btn-primary">Search</button>
+    </div>
 </div>

@@ -11,5 +11,10 @@ export class AddCustomerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  saveCustomer(): void {
+     const newCustomer: customer = Object.assign({}, this.customer);
+    this._customerService.save(this.employee);
+    this.createCustomerForm.reset();
+    this._router.navigate(['customer']);
 
 }
