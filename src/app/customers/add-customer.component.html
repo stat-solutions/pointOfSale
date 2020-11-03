@@ -4,16 +4,16 @@
             <h1 class="panel-title">Add Customer</h1>
         </div>
         <div class="panel-body">
-            <div class="form-group" [class.has-error]="firstname.invalid && name.touched"
+            <div class="form-group" [class.has-error]="firstname.invalid && firstname.touched"
                 [class.has-success]="firstname.valid">
-                <label for="name" class="control-label"> First Name</label>
+                <label for="firstname" class="control-label"> First Name</label>
                 <input required type="text" placeholder="Enter first name" class="form-control" #firstname="ngModel">
                 <span class="help-block" *ngIf="firstname.invalid && firstname.touched">
                     First Name is required
                 </span>
 
             </div>
-            <div class="form-group" [class.has-error]="name.invalid && name.touched" [class.has-success]="name.valid">
+            <div class="form-group" [class.has-error]="lastname.invalid && lastname.touched" [class.has-success]="name.valid">
                 <label for="lastname" class="control-label"> Last Name</label>
                 <input required type="text" placeholder="Enter last name" class="form-control" #lastname="ngModel">
                 <span class="help-block" *ngIf="lastname.invalid && lastname.touched">
@@ -35,14 +35,14 @@
             </div>
 
 
-            <div class="form-group" [class.has-error]="phoneNumber.invalid">
-                <label for="phoneNumber" class="control-label">Contact Number</label>
+            <div class="form-group" [class.has-error]="contactNumber.invalid">
+                <label for="contactNumber" class="control-label">Contact Number</label>
                 <input required placeholder="Enter mobile number" type="text" class="form-control">
-                <span class="help-block" *ngIf="phoneNumber.errors?.required">
+                <span class="help-block" *ngIf="contactNumber.errors?.required">
                     Contact Number is required
                 </span>
             </div>
-            
+
 
             <div class="form-group" [class.has-error]="customerGroup.touched && customerGroup.invalid">
 
@@ -75,4 +75,5 @@
             </div>
 
         </div>
+    </div>
 </form>
