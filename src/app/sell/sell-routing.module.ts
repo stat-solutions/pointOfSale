@@ -8,7 +8,8 @@ import { SellComponent } from './sell.component';
 import { SettingsComponent } from './settings/settings.component';
 import { StatusComponent } from './status/status.component';
 
-const routes: Routes = [{ path: '', component: SellComponent },
+const routes: Routes = [{ path: '', component: SellComponent }, 
+{path: '/', component:SellComponent},
 {path: 'open', component: OpenCloseComponent},
 {path: 'salesHistory', component: SalesHistoryComponent},
 {path: 'cashManagent', component: CashManagementComponent},
