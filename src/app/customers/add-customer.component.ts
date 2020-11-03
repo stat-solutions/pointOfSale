@@ -6,15 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-customer.component.css']
 })
 export class AddCustomerComponent implements OnInit {
+   public customer: any;
+  private _customerService: any;
+  createCustomerForm: any;
+  private _router: any;
 
   constructor() { }
 
   ngOnInit(): void {
   }
   saveCustomer(): void {
-     const newCustomer: customer = Object.assign({}, this.customer);
-    this._customerService.save(this.employee);
+     //const newCustomer: customer = Object.assign({}, this.customer);
+    this._customerService.save(this.customer);
     this.createCustomerForm.reset();
     this._router.navigate(['customer']);
 
+}
 }
