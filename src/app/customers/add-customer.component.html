@@ -1,79 +1,85 @@
-<form #customer="ngForm" (ngSubmit)="createNewCustomer()">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h1 class="panel-title">Add Customer</h1>
-        </div>
-        <div class="panel-body">
-            <div class="form-group" [class.has-error]="firstname.invalid && firstname.touched"
-                [class.has-success]="firstname.valid">
-                <label for="firstname" class="control-label"> First Name</label>
-                <input required type="text" placeholder="Enter first name" class="form-control" #firstname="ngModel">
-                <span class="help-block" *ngIf="firstname.invalid && firstname.touched">
-                    First Name is required
-                </span>
-
+<div style="float:right; position:absolute; top:0%; left:25%" class="wrapper">
+    <form #customer="ngForm" (ngSubmit)="createNewCustomer()">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1 class="panel-title">Add Customer</h1>
             </div>
-            <div class="form-group" [class.has-error]="lastname.invalid && lastname.touched" [class.has-success]="name.valid">
-                <label for="lastname" class="control-label"> Last Name</label>
-                <input required type="text" placeholder="Enter last name" class="form-control" #lastname="ngModel">
-                <span class="help-block" *ngIf="lastname.invalid && lastname.touched">
-                    Last Name is required
-                </span>
+            <div class="panel-body">
+                <div class="form-group" [class.has-error]="firstname.invalid && firstname.touched"
+                    [class.has-success]="firstname.valid">
+                    <label for="firstname" class="control-label"> First Name</label>
+                    <input required type="text" placeholder="Enter first name" class="form-control"
+                        #firstname="ngModel">
+                    <span class="help-block" *ngIf="firstname.invalid && firstname.touched">
+                        First Name is required
+                    </span>
 
-            </div>
-            <div class="form-group" [class.has-error]="email.invalid">
-                <label for="email" class="control-label">Email</label>
-                <input required placeholder="Enter email" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
-                    type="text" class="form-control">
-                <span class="help-block" *ngIf="email.errors?.required">
-                    Email is required
-                </span>
-                <span class="help-block" *ngIf="email.errors?.pattern">
-                    Email is invalid
-                </span>
+                </div>
+                <div class="form-group" [class.has-error]="lastname.invalid && lastname.touched"
+                    [class.has-success]="name.valid">
+                    <label for="lastname" class="control-label"> Last Name</label>
+                    <input required type="text" placeholder="Enter last name" class="form-control" #lastname="ngModel">
+                    <span class="help-block" *ngIf="lastname.invalid && lastname.touched">
+                        Last Name is required
+                    </span>
 
-            </div>
+                </div>
+                <div class="form-group" [class.has-error]="email.invalid">
+                    <label for="email" class="control-label">Email</label>
+                    <input required placeholder="Enter email" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                        type="text" class="form-control">
+                    <span class="help-block" *ngIf="email.errors?.required">
+                        Email is required
+                    </span>
+                    <span class="help-block" *ngIf="email.errors?.pattern">
+                        Email is invalid
+                    </span>
 
-
-            <div class="form-group" [class.has-error]="contactNumber.invalid">
-                <label for="contactNumber" class="control-label">Contact Number</label>
-                <input required placeholder="Enter mobile number" type="text" class="form-control">
-                <span class="help-block" *ngIf="contactNumber.errors?.required">
-                    Contact Number is required
-                </span>
-            </div>
-
-
-            <div class="form-group" [class.has-error]="customerGroup.touched && customerGroup.invalid">
+                </div>
 
 
-                <label for="customerGroup" class="control-label">
-                    Customer Group
-                </label>
-                <select name="customerGroup" class="form-control">
-                    <option value="select">Select Department</option>
-                    <option value="select">All</option>
-                    <option value="select">All Customers</option>
-                </select>
-                <span class="help-block" *ngIf="customerGroup.touched && customerGroup.errors?.defaultSelected">
-                    Customer Group is required
-                </span>
-            </div>
-            <div>
-                <input type="radio" name="Opt-In to Marketing and Promotional Emails">
-            </div>
-            <div>
-                <h3>
-                    Add an email address to this customer so that you can email their receipts or send them promotional
-                    emails.
+                <div class="form-group" [class.has-error]="contactNumber.invalid">
+                    <label for="contactNumber" class="control-label">Contact Number</label>
+                    <input required placeholder="Enter mobile number" type="text" class="form-control">
+                    <span class="help-block" *ngIf="contactNumber.errors?.required">
+                        Contact Number is required
+                    </span>
+                </div>
+
+
+                <div class="form-group" [class.has-error]="customerGroup.touched && customerGroup.invalid">
+
+
+                    <label for="customerGroup" class="control-label">
+                        Customer Group
+                    </label>
+                    <select name="customerGroup" class="form-control">
+                        <option value="select">Select Department</option>
+                        <option value="select">All</option>
+                        <option value="select">All Customers</option>
+                    </select>
+                    <span class="help-block" *ngIf="customerGroup.touched && customerGroup.errors?.defaultSelected">
+                        Customer Group is required
+                    </span>
+                </div>
+                <div>
+                    <input type="radio" name="Opt-In to Marketing and Promotional Emails">
+                </div>
+                <div>
                     <h3>
-            </div>
+                        Add an email address to this customer so that you can email their receipts or send them
+                        promotional
+                        emails.
+                        <h3>
+                </div>
 
-            <div class="panel-footer">
-                <button type="submit" class="btn btn-primary" [disabled]="employeeForm.invalid">Create New
-                    Customer</button>
-            </div>
+                <div class="panel-footer">
+                    <button type="submit" class="btn btn-primary" [disabled]="customerForm.invalid">Create New
+                        Customer
+                    </button>
+                </div>
 
+            </div>
         </div>
-    </div>
-</form>
+    </form>
+</div>

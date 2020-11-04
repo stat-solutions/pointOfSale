@@ -10,6 +10,11 @@ export class AddCustomerComponent implements OnInit {
   private _customerService: any;
   createCustomerForm: any;
   private _router: any;
+  firstname: string;
+  lastname: string;
+  customerGroup: string;
+  contact: number;
+  email: string;
 
   constructor() { }
 
