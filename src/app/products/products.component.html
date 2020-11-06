@@ -1,1 +1,273 @@
-<p>products works!</p>
+<div style="display: flex; width: 100%; align-items: stretch; float: right; position: absolute; top: 0%; left: 12%;">
+    <nav class="nav">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="product">products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="brands">Brands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="inventoryCounts">Inventory Counts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="priceBook">Price Book</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="productTags">Product Tags</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="productTypes">product Types</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="promotions">Promotion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="stockControl">stock Control</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="suppliers">Suppliers</a>
+            </li>
+
+        </ul>
+
+    </nav>
+</div>
+
+
+
+<div class="container">
+
+    <div style="float: right; position: absolute; top: 0%; left: 30%; font-size: 0.9cm;">
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Products</span>
+        </nav>
+        <nav class="navbar navbar-light" style="background-color: lightblue;">
+            <h5>Add, view and edit your products all in one place. <a class="active" href="#"> <u>Need help?</u>
+                </a>
+            </h5>
+            <a href="#" class="btn btn-primary btn-lg active " role="button" aria-pressed="true">Import
+            </a>
+            <a href="#" class="btn btn-success btn-lg active " role="button" aria-pressed="true">Add Product
+            </a>
+        </nav>
+        <section>
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                    <label for="search for products">Search for products</label>
+                    <input class="form-control mr-sm-2" type="search"
+                        placeholder="Enter name, SKU, handle or supplier code" aria-label="Search">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">product Types</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>All types</option>
+                            <option value="1">All types</option>
+                            <option value="2">fashion</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Suppliers</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>All suppliers</option>
+                            <option value="1">All suppliers</option>
+                            <option value="2">flo & flanklin</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Brands</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>All brands</option>
+                            <option value="1">All brands</option>
+                            <option value="2">Cluse</option>
+                            <option value="3">Lilya</option>
+                            <option value="4">Nude Lacy</option>
+                            <option value="5">Quay</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Status</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>All statuses</option>
+                            <option value="1">Active</option>
+                            <option value="2">inactive</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tags">Tags</label>
+                        <input class="form-control mr-sm-2" type="text" placeholder="Enter tags" aria-label="text">
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn btn-primary btn-lg active " role="button" aria-pressed="true">Search</a>
+                    </div>
+
+                </form>
+            </nav>
+        </section>
+
+
+        <section>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Brand</th>
+                    <th>Supplier</th>
+                    <th>Inventory</th>
+                    <th>Retail Price</th>
+                    <th>Active</th>
+                    <th>Created At</th>
+                </tr>
+                <tr>
+                    <td><a class="active" href="#"> <u>Audhild Tee</u> </a></td>
+                    <td><a class="active" href="#"><u> Nude Lacy</u> </a></td>
+                    <td><a class="active" href="#"> <u>Flo & Frankie</u> </a></td>
+                    <td>0</td>
+                    <td>ugx 50</td>
+                    <td>-</td>
+                    <td>31 oct 20020</td>
+                </tr>
+
+                <tr>
+                    <td><a class="active" href="#"> <u>LaBoheme Mesh</u> </a></td>
+                    <td><a class="active" href="#"><u>Cluse </u> </a></td>
+                    <td><a class="active" href="#"> <u>Flo & Frankie</u> </a></td>
+                    <td>0</td>
+                    <td>ugx 199</td>
+                    <td>-</td>
+                    <td>31 oct 20020</td>
+                </tr>
+
+                <tr>
+                    <td><a class="active" href="#"> <u>My Girl Sunglasses</u> </a></td>
+                    <td><a class="active" href="#"><u> Quay</u> </a></td>
+                    <td><a class="active" href="#"> <u>Flo & Frankie</u> </a></td>
+                    <td>0</td>
+                    <td>ugx 70</td>
+                    <td>-</td>
+                    <td>31 oct 20020</td>
+                </tr>
+
+                <tr>
+                    <td><a class="active" href="#"> <u>Nala Dress</u> </a></td>
+                    <td><a class="active" href="#"><u> Lilya</u> </a></td>
+                    <td><a class="active" href="#"> <u>Flo & Frankie</u> </a></td>
+                    <td>0</td>
+                    <td>ugx 270</td>
+                    <td>-</td>
+                    <td>31 oct 20020</td>
+                </tr>
+
+            </table>
+
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<nav class="navbar navbar-light" style="background-color: #e3f2fd; ">
+            <h1>Price Books</h1>
+            <nav class="navbar navbar-light" style="background-color: lightblue;">
+                <h5>A list of all of your price books. <a class="active" href="#"> <u>Need help?</u> </a></h5>
+                <a href="#" class="btn btn-success btn-lg active " role="button" aria-pressed="true">Add Price
+                    Book</a>
+            </nav>
+        </nav>
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Active
+                        </a>
+    
+    <div class="dropdown">
+                        <label for="Products Type">Products type</label>
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All Types
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">All Types</a>
+                            <a class="dropdown-item" href="#">fashion</a>
+
+                        </div>
+
+                    </div>
+    <div class="dropdown">
+                        <label for="Supplier">Supplier</label>
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All suppliers
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">All Types</a>
+                            <a class="dropdown-item" href="#">Flo & Frankie</a>
+
+                        </div>
+
+                    </div>
+
+<div class="dropdown">
+                        <label for="Brand">Brand</label>
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All brands
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">All Types</a>
+                            <a class="dropdown-item" href="#">Cluse</a>
+                            <a class="dropdown-item" href="#">Lilya</a>
+                            <a class="dropdown-item" href="#">Nude lacy</a>
+                            <a class="dropdown-item" href="#">Quay</a>
+                        </div>
+
+                    </div>
+
+
+<div class="dropdown">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                           <label for="Status">Status</label>
+                            <input class="form-control mr-sm-2" type="select" placeholder="All types" aria-label="Select">
+
+                            <select name="status" id="status" multiple>
+                               <option> <a class="dropdown-item" href="#">All statuses</a></option>
+                               <option><a class="dropdown-item" href="#">Active</a></option>
+                               <option><a class="dropdown-item" href="#">inactive</a></option>
+                           </select>
+                        </div>
+                    </div>
+
+
+    
+    -->
