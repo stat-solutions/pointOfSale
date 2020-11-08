@@ -1,0 +1,62 @@
+ .container-fluid{
+     top:0%;
+     position: fixed;
+     height: 100%;
+ }
+
+ .container{
+    top:10px;
+    position:relative;
+ }
+ 
+ img {
+    float: left;
+    width:150px;
+    height:100px;
+    margin-right:15px;
+  }
+  p{
+      font-size: 15px;
+  }
+ 
+  article {
+    float: left;
+    padding: 20px;
+    width: 75%;
+    
+    height: 200px;
+  }
+
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+  }
+ 
+ 
+ a:link {
+    color: black;
+  }
+  /* visited link */
+ a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: blue;
+  }
+  
+  /* selected link */
+  a:active {
+    color:cyan;
+  }
+
+  
