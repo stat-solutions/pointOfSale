@@ -14,13 +14,6 @@ export class CustomerComponent implements OnInit {
   onChangeCustomerGroup(){
     
   }
+
   
-
-  importCustomer(){
-
-  }
-  addCustomer(){
-    
-  }
-
 }
