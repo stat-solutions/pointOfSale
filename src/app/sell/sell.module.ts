@@ -9,6 +9,7 @@ import { CashManagementComponent } from './cash-management/cash-management.compo
 import { StatusComponent } from './status/status.component';
 import { SettingsComponent } from './settings/settings.component';
 import { RouterModule } from '@angular/router';
+import { SalesComponent } from './sales/sales.component';
 
 
 const appRoutes = [
@@ -19,7 +20,8 @@ const appRoutes = [
     SalesHistoryComponent,
     CashManagementComponent,
     StatusComponent,
-    SettingsComponent],
+    SettingsComponent,
+    SalesComponent],
   imports: [
     CommonModule,
     SellRoutingModule,

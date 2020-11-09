@@ -1,10 +1,10 @@
-<div style=" float: right; position: absolute; top: 0%; left: 28%;" class="cash">
+<div class="cash">
     <h2>Cash Management</h2><br>
-    <div>
+    <div class="cashButtons">
         Record your cash movements for the day. <a href="#">Need help?</a>
 
-        <button class="btn btn-primary" (click)="onRemove()" style="float: right;">Remove Cash</button>
-        <button class="btn btn-secondary" (click)="onAdd()" style="float: right;">Add Cash</button><br>
+        <button class="btn btn-primary" (click)="onRemove()">Remove Cash</button>
+        <button class="btn btn-secondary" (click)="onAdd()">Add Cash</button><br>
 
     </div>
     <table class="table">
@@ -21,8 +21,8 @@
             <td>{{title}}</td>
         </tr>
     </table>
-    <div id="removeCash" style="display: none; float: right; position: absolute; top: 20%; left: 10%;">
-        <table border="1" style="background-color: rgb(255, 255, 255); color: rgb(7, 7, 7); display: flexbox;">
+    <div id="removeCash" class="cashRemove" >
+        <table border="1" class="table1">
             <tr>
                 <td>
                     <h6>Remove Cash</h6><br>
@@ -57,8 +57,8 @@
         </table>
 
     </div>
-    <div id="addCash" style="display: none; float: right; position: absolute; top: 20%; left: 10%;">
-        <table border="1" style="background-color: rgb(255, 255, 255); color: rgb(7, 7, 7); display: flexbox;">
+    <div id="addCash">
+        <table border="1" class="table1">
             <tr>
                 <td>
                     <h6>Add Cash</h6><br>
