@@ -18,7 +18,10 @@ export class CashManagementComponent implements OnInit {
   onAdd() {
     document.getElementById('addCash').style.display = "block";
   }
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> 745fde9f2e13269d1238ecc53f71858ad5470bd0
 
 }
