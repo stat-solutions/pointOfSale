@@ -1,0 +1,98 @@
+<div class="cash">
+    <h2>Cash Management</h2><br>
+    <div class="cashButtons">
+        Record your cash movements for the day. <a href="#">Need help?</a>
+
+        <button class="btn btn-primary" (click)="onRemove()">Remove Cash</button>
+        <button class="btn btn-secondary" (click)="onAdd()">Add Cash</button><br>
+
+    </div>
+    <table class="table">
+        <tr>
+            <th>Date</th>
+            <th>User</th>
+            <th>Reasons</th>
+            <th>Transaction(Ush)</th>
+        </tr>
+        <tr>
+            <td>{{title}}</td>
+            <td>{{title}}</td>
+            <td>{{title}}</td>
+            <td>{{title}}</td>
+        </tr>
+    </table>
+    <div id="removeCash" class="cashRemove">
+        <table border="1" class="table1">
+            <tr>
+                <td>
+                    <h6>Remove Cash</h6><br>
+                    <form class="form-group">
+                        <div class="form-control">
+                            <label for="" class="radio-inline">
+                                <input type="radio" checked value="cashOut">
+                                Cash Out
+                            </label>
+                            <label for="" class="radio-inline">
+                                <input type="radio" value="PettyCashOut">
+                                Petty Cash Out
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Amount</label>
+                            <input type="number" class="form-control" placeholder="eg. 1000">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Note</label>
+                            <input type="text" class="form-control" placeholder="type to add a text"><br>
+                            max characters:255
+                        </div>
+                        <div>
+                            <button type="reset" class="btn btn-primary" style="float: right;" disabled>Remove
+                                Cash</button>
+                        </div>
+
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="addCash">
+        <table border="1" class="table1">
+            <tr>
+                <td>
+                    <h6>Add Cash</h6><br>
+                    <form class="form-group">
+                        <div class="form-control">
+                            <label for="" class="radio-inline">
+                                <input type="radio" checked value="cashOut">
+                                Cash Out
+                            </label>
+                            <label for="" class="radio-inline">
+                                <input type="radio" value="PettyCashOut">
+                                Petty Cash Out
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Amount</label>
+                            <input type="number" class="form-control" placeholder="eg. 1000">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Note</label>
+                            <input type="text" class="form-control" placeholder="type to add a text"><br>
+                            max characters:255
+                        </div>
+                        <div>
+                            <button type="reset" class="btn btn-primary" style="float: right;" disabled>Add
+                                Cash</button>
+                        </div>
+
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>

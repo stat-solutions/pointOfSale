@@ -1,0 +1,46 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    float: right;
+    position: absolute;
+    top: 0%; 
+    left: 12%;
+    
+}
+#sidebar {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 80vh;
+    background-color: white;
+    color: black;
+    transition: all 0.3s;
+    float: right;
+}
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 0.9em;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#sidebar ul li a:hover {
+    color: blueviolet;
+    background: #fff;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background-color: cornsilk;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    color: darkmagenta;
+    background-color: white;
+}
+
+
+
+

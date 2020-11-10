@@ -1,0 +1,12 @@
+.status{
+    background-color:gainsboro ;  float: right; position: absolute; top: 0%; left: 28%;
+}
+#showMe{
+    display: none; float: right; position: absolute; top: 0%; left: 50%; font-size: 60%;
+}
+.table{
+    background-color: rgb(255, 255, 255); color: rgb(7, 7, 7); display: flexbox;
+}
+.header{
+    background-color: gainsboro; margin: 50px;
+}

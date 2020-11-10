@@ -1,0 +1,12 @@
+.head{
+    text-decoration: none;
+    color: black;
+
+}
+ a:hover{
+    color: green;
+    text-decoration: underline;
+}
+.salesHistory{
+    float: right; position: absolute; top: 0%; left: 28%;
+}

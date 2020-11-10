@@ -1,0 +1,19 @@
+.container{
+    background-color: white;
+}
+.container1 {
+    float: right; position: absolute; top: 0%; left: 25%; font-size: 0.9em;
+
+}
+.container5 {
+    height: 520px; width: 330px; float: right; position: absolute; top: 60%; left: 220%; font-size: 0.9em;background-color: white;
+}
+.container2{
+    height: 70px; width: 100px; float: right; position: absolute; left: 10%; font-size: 0.9em; background-color: white;
+}
+.container3 {
+    height: 70px; width: 100px; float: right; position: absolute; left: 70%; font-size: 0.9em; background-color: white;
+}
+.container4 {
+    height: 70px; width: 100px; float: right; position: absolute; left: 130%; font-size: 0.9em; background-color: white;
+}

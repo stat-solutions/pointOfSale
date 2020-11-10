@@ -1,0 +1,64 @@
+
+<div class="salesHistory">
+
+    <div>
+        <h1>Sales History</h1>
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Process Return</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Continue Sale</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <p>Find all sales for a customer.<a href="#">Need Help?</a></p>
+
+    <form>
+        <div class="form-row" style="background-color: rgb(247, 245, 241);">
+            <div class="col-md-4 mb-3">
+                <label>Status</label>
+                <select class="form-control" name="status" id="status">
+                    <option value="allSales" selected>All Sales</option>
+                    <option value="layBy">LayBy</option>
+                    <option value="onAccount">On account</option>
+                    <option value="parked">Parked</option>
+                    <option value="deliverUn">Delivery, Unfulfilled</option>
+                    <option value="pickedUp">PickedUp, Unfulfilled</option>
+                    <option value="completed">Completed</option>
+                    <option value="layByComp" s>LayBy, Completed</option>
+                    <option value="onAccountComp">Onaccount, Completed</option>
+                    <option value="deliverComp">Delivery, Completed</option>
+                    <option value="peckedUpComp">PickedUp, Completed</option>
+                    <option value="voided">Voided</option>
+
+                </select>
+
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Customers</label>
+                <input type="text" class="form-control" placeholder="search for Customer">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Receipt or Note</label>
+                <input type="text" class="form-control"
+                    placeholder="search receipt number or note">
+            </div>
+            <a href="#" class="badge badge-light" style="margin: 50px;">More Filters</a>
+            <div>
+                <button class="btn btn-primary" type="submit" style="margin: 50px;">Search</button>
+            </div>
+        </div>
+    </form>
+    <br>
+    No results <hr>
+</div>
