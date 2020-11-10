@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "PointOfSale"
+    }
+  },
+  "defaultProject": "PointOfSale",
+  "cli": {
+    "analytics": "bef4dca9-10be-4aa8-b5bf-f0de045b1ec8"
+  }
 }
