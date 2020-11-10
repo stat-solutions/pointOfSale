@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CashManagementComponent } from './cash-management/cash-management.component';
-import { OpenCloseComponent } from './open-close/open-close.component';
-import { SalesHistoryComponent } from './sales-history/sales-history.component';
-import { SalesComponent } from './sales/sales.component';
+import { CashManagementComponent } from './components/cash-management/cash-management.component';
+import { OpenCloseComponent } from './components/open-close/open-close.component';
+import { SalesHistoryComponent } from './components/sales-history/sales-history.component';
+import { SalesComponent } from './components/sales/sales.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { StatusComponent } from './components/status/status.component';
+
 
 
 import { SellComponent } from './sell.component';
-import { SettingsComponent } from './settings/settings.component';
-import { StatusComponent } from './status/status.component';
 
 const routes: Routes = [{
   path: '', component: SellComponent,
