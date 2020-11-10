@@ -9,10 +9,8 @@ import { CashManagementComponent } from './cash-management/cash-management.compo
 import { StatusComponent } from './status/status.component';
 import { SettingsComponent } from './settings/settings.component';
 import { RouterModule } from '@angular/router';
-<<<<<<< HEAD
+
 import { SalesComponent } from './sales/sales.component';
-=======
->>>>>>> 745fde9f2e13269d1238ecc53f71858ad5470bd0
 
 
 const appRoutes = [
@@ -23,12 +21,9 @@ const appRoutes = [
     SalesHistoryComponent,
     CashManagementComponent,
     StatusComponent,
-<<<<<<< HEAD
-    SettingsComponent,
-    SalesComponent],
-=======
+    SalesComponent,
     SettingsComponent],
->>>>>>> 745fde9f2e13269d1238ecc53f71858ad5470bd0
+
   imports: [
     CommonModule,
     SellRoutingModule,

@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #     defaults:
 #       run:
 #         shell: bash
@@ -12,12 +13,17 @@ jobs:
 =======
 =======
 >>>>>>> 745fde9f2e13269d1238ecc53f71858ad5470bd0
+=======
+>>>>>>> 745fde9f2e13269d1238ecc53f71858ad5470bd0
     # defaults:
     #   run:
     #     shell: bash
     #     working-directory: Client
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> added-gitactions-in-your-branch
+=======
+>>>>>>> 745fde9f2e13269d1238ecc53f71858ad5470bd0
 =======
 >>>>>>> 745fde9f2e13269d1238ecc53f71858ad5470bd0
     strategy:

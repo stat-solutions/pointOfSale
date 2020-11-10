@@ -6,11 +6,7 @@
  a:hover{
     color: green;
     text-decoration: underline;
-
-<<<<<<< HEAD
 }
 .salesHistory{
     float: right; position: absolute; top: 0%; left: 28%;
-=======
->>>>>>> 745fde9f2e13269d1238ecc53f71858ad5470bd0
 }

@@ -1,6 +1,5 @@
 .cash{
     font-size: 80%;
-<<<<<<< HEAD
 }
 .cash{
     float: right; position: absolute; top: 0%; left: 28%;
@@ -16,6 +15,4 @@
 }
 #addCash{
     display: none; float: right; position: absolute; top: 20%; left: 10%;
-=======
->>>>>>> 745fde9f2e13269d1238ecc53f71858ad5470bd0
 }
