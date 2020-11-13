@@ -1,18 +1,28 @@
 <div style="float: right; position: absolute; top: 0%; left: 25%;">
-    <h1><b>Start your retail succes with Point Of Sale</b></h1>
-    <br>
 
-    <div class="centeredright">
-        <button router-link="/Make a Sale">Make a Sale</button>
-        <p>Explore the Sell screen, and learn how to make your first sale in seconds</p>
-        <p>You've made a sale!</p>
+    <h1><b>Start your retail succes with Point Of Sale</b></h1><br>
+    <p style="display: flex;position: relative;padding-left: 90px; ">Get to know the basics in three easy ways</p>
+    <br><br><br>
+    <div class="form-row">
+
+        <div class="col-md-4 mb-3">
+            <h2>Make a Sale</h2>
+            <p>Explore the Sell screen, and learn how to make your first sale in seconds</p>
+            <button router-link="/Make a Sale" class="btn btn-success">Make a Sale</button>
+
+        </div>
+        <div class="col-md-4 mb-3">
+            <h2>Add a Product</h2>
+            <p>Manage your products easily,whether you want to add one or import one thousands</p>
+            <button class="btn btn-success">Add a Product</button>
+            <br>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <h2>Add a Customer</h2>
+            <p>Start a customer base to grow repeat business or simply add existing customers</p>
+            <button router-link="/Add a Customer" class="btn btn-success">Add a Customer</button>
+        </div>
     </div>
-    <button router-link="/Add a Product"><a href="hoovee.html">Add a Product</a></button>
-    <p>Manage your products easily,whether you want to add one or import one thousands</p>
-    <br>
-    <div class="bottomcentered">
-        <button router-link="/Add a Customer">Add a Customer</button>
-        <p>Start a customer base to grow repeat business or simply add existing customers</p>
-    </div>
-    <p>Making trade easy</p>
+
 </div>
