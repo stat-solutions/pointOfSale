@@ -1,0 +1,8 @@
+.section {
+    width: 80%;
+}
+.nav ul {
+    list-style: none; 
+    line-height: 24px;
+    padding: 0px; 
+}
